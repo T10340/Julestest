@@ -1,102 +1,75 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
+import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { Activity, ArrowDown, ArrowUp, CreditCard, DollarSign, TrendingUp } from "lucide-react"
+import { useEffect, useState } from "react"
 import { Area, AreaChart, ResponsiveContainer, Tooltip } from "recharts"
 
+const iconMap = {
+	DollarSign: DollarSign,
+	TrendingUp: TrendingUp,
+	CreditCard: CreditCard,
+	Activity: Activity,
+}
+
 export function StatsCards() {
-	const stats = [
-		{
-			title: "Total Balance",
-			value: "$14,278.45",
-			change: "+2.5%",
-			trend: "up",
-			icon: DollarSign,
-			color: "from-emerald-500 to-teal-500",
-			lightColor: "bg-emerald-50 dark:bg-emerald-950/30",
-			strokeColor: "#10b981", // emerald-500
-			fillColor: "#10b98120", // emerald-500 with opacity
-			decorationColor: "emerald",
-			data: [
-				{ value: 4000 },
-				{ value: 3500 },
-				{ value: 4500 },
-				{ value: 4200 },
-				{ value: 5000 },
-				{ value: 4800 },
-				{ value: 5800 },
-				{ value: 5500 },
-			],
-		},
-		{
-			title: "Monthly Income",
-			value: "$3,100.00",
-			change: "+5.1%",
-			trend: "up",
-			icon: TrendingUp,
-			color: "from-blue-500 to-indigo-500",
-			lightColor: "bg-blue-50 dark:bg-blue-950/30",
-			strokeColor: "#3b82f6", // blue-500
-			fillColor: "#3b82f620", // blue-500 with opacity
-			decorationColor: "blue",
-			data: [
-				{ value: 3000 },
-				{ value: 4000 },
-				{ value: 3500 },
-				{ value: 4500 },
-				{ value: 4000 },
-				{ value: 5000 },
-				{ value: 5500 },
-				{ value: 6000 },
-			],
-		},
-		{
-			title: "Monthly Expenses",
-			value: "$1,823.75",
-			change: "+12.3%",
-			trend: "down", // This is actually bad for expenses
-			icon: CreditCard,
-			color: "from-rose-500 to-pink-500",
-			lightColor: "bg-rose-50 dark:bg-rose-950/30",
-			strokeColor: "#f43f5e", // rose-500
-			fillColor: "#f43f5e20", // rose-500 with opacity
-			decorationColor: "rose",
-			data: [
-				{ value: 2500 },
-				{ value: 3000 },
-				{ value: 3500 },
-				{ value: 4000 },
-				{ value: 4500 },
-				{ value: 5000 },
-				{ value: 5500 },
-				{ value: 6000 },
-			],
-		},
-		{
-			title: "Savings Rate",
-			value: "41.2%",
-			change: "+2.1%",
-			trend: "up",
-			icon: Activity,
-			color: "from-violet-500 to-purple-500",
-			lightColor: "bg-violet-50 dark:bg-violet-950/30",
-			strokeColor: "#8b5cf6", // violet-500
-			fillColor: "#8b5cf620", // violet-500 with opacity
-			decorationColor: "violet",
-			data: [
-				{ value: 35 },
-				{ value: 40 },
-				{ value: 30 },
-				{ value: 35 },
-				{ value: 40 },
-				{ value: 35 },
-				{ value: 38 },
-				{ value: 40 },
-			],
-		},
-	]
+	const [stats, setStats] = useState([])
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
+
+	useEffect(() => {
+		async function fetchStats() {
+			try {
+				const response = await fetch("/api/stats")
+				if (!response.ok) {
+					throw new Error("Failed to fetch stats")
+				}
+				const data = await response.json()
+				// Map icon names back to Lucide components
+				const statsWithIcons = data.map((stat) => ({
+					...stat,
+					icon: iconMap[stat.iconName] || DollarSign,
+				}))
+				setStats(statsWithIcons)
+			} catch (err) {
+				setError(err.message)
+			} finally {
+				setLoading(false)
+			}
+		}
+
+		fetchStats()
+	}, [])
+
+	if (loading) {
+		return (
+			<div className="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+				{[...Array(4)].map((_, i) => (
+					<Card key={i} className="p-6">
+						<div className="flex justify-between items-start mb-4">
+							<Skeleton className="h-12 w-12 rounded-xl" />
+							<Skeleton className="h-12 w-40" />
+						</div>
+						<div className="space-y-2 mt-4">
+							<Skeleton className="h-8 w-1/2" />
+							<Skeleton className="h-4 w-1/3" />
+						</div>
+					</Card>
+				))}
+			</div>
+		)
+	}
+
+	if (error) {
+		return (
+			<div className="p-4 text-sm text-red-500 bg-red-50 dark:bg-red-950/30 rounded-lg">
+				Error loading statistics: {error}
+			</div>
+		)
+	}
 
 	return (
 		<div className="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
