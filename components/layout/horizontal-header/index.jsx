@@ -10,6 +10,7 @@ import { NotificationsMenu } from "./notifications-menu"
 import { ProfileMenu } from "./profile-menu"
 import { ThemeToggle } from "./theme-toggle"
 import { AuthButtons } from "./auth-buttons"
+import { useRouter } from "next/navigation"
 
 // Mock notifications data
 const defaultNotifications = [
@@ -37,12 +38,13 @@ const defaultNotifications = [
 ]
 
 export function HorizontalHeader({ toggleSidebar, setMobileOpen, notifications = defaultNotifications }) {
+  const router = useRouter()
   const [isLoggedIn, setIsLoggedIn] = useState(true) // For demo purposes
 
   const handleLogout = () => {
     // In a real app, you would handle logout logic here
     setIsLoggedIn(false)
-    window.location.href = "/auth/login"
+    router.push("/auth/login")
   }
 
   return (
