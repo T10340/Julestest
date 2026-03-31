@@ -9,9 +9,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { AlertCircle, Lock, Mail } from "lucide-react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 export default function LoginPage() {
+	const router = useRouter()
 	const [email, setEmail] = useState("")
 	const [password, setPassword] = useState("")
 	const [rememberMe, setRememberMe] = useState(false)
@@ -27,7 +29,7 @@ export default function LoginPage() {
 			// Simulate API call
 			await new Promise((resolve) => setTimeout(resolve, 1500))
 			// For demo purposes, just redirect to dashboard
-			window.location.href = "/"
+			router.push("/")
 		} catch (error) {
 			setError("An error occurred during sign in. Please try again.")
 		} finally {

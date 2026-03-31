@@ -9,9 +9,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { AlertCircle, Lock, Mail, User } from "lucide-react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 export default function RegisterPage() {
+	const router = useRouter()
 	const [formData, setFormData] = useState({
 		firstName: "",
 		lastName: "",
@@ -68,7 +70,7 @@ export default function RegisterPage() {
 			// Simulate API call
 			await new Promise((resolve) => setTimeout(resolve, 1500))
 			// For demo purposes, just redirect to dashboard
-			window.location.href = "/"
+			router.push("/")
 		} catch (error) {
 			setError("An error occurred during registration. Please try again.")
 		} finally {

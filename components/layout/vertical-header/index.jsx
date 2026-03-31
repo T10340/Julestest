@@ -10,6 +10,7 @@ import { NotificationsMenu } from "./notifications-menu"
 import { ProfileMenu } from "./profile-menu"
 import { ThemeToggle } from "./theme-toggle"
 import { AuthButtons } from "./auth-buttons"
+import { useRouter } from "next/navigation"
 
 // Mock search results
 const getSearchResults = (query) => {
@@ -49,6 +50,7 @@ const defaultNotifications = [
 ]
 
 export function VerticalHeader({ toggleSidebar, setMobileOpen, notifications = defaultNotifications }) {
+  const router = useRouter()
   const { direction } = useThemeContext()
   const [isLoggedIn, setIsLoggedIn] = useState(true) // For demo purposes
   const [searchOpen, setSearchOpen] = useState(false)
@@ -58,7 +60,7 @@ export function VerticalHeader({ toggleSidebar, setMobileOpen, notifications = d
   const handleLogout = () => {
     // In a real app, you would handle logout logic here
     setIsLoggedIn(false)
-    window.location.href = "/auth/login"
+    router.push("/auth/login")
   }
 
   return (
