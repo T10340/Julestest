@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Stat {
+  id              Int        @id @default(autoincrement())
+  title           String     @unique
+  value           String
+  change          String
+  trend           String     // "up" or "down"
+  iconName        String
+  color           String
+  lightColor      String
+  strokeColor     String
+  fillColor       String
+  decorationColor String
+  dataPoints      StatDataPoint[]
+}
+
+model StatDataPoint {
+  id     Int   @id @default(autoincrement())
+  statId Int
+  value  Float
+  stat   Stat  @relation(fields: [statId], references: [id], onDelete: Cascade)
+}
+
+model Transaction {
+  id          Int      @id @default(autoincrement())
+  amount      Float
+  type        String   // "income" or "expense"
+  date        DateTime @default(now())
+  category    String
+  description String?
+}
