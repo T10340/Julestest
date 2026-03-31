@@ -18,8 +18,8 @@ export function Logo({ className, size = "default", showText = true }) {
 			</div>
 			{showText && (
 				<span className="font-semibold text-xl tracking-tight">
-					<span className="text-emerald-600">Exp</span>
-					<span>enzo</span>
+					<span className="text-emerald-600">JUYO</span>
+					<span> Finance</span>
 				</span>
 			)}
 		</Link>

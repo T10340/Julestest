@@ -10,7 +10,7 @@ export default function InstallationPage() {
 					Installation
 				</h1>
 				<p className="text-muted-foreground">
-					Learn how to install and set up Expenzo for your Next.js application.
+					Learn how to install and set up JUYO Finance for your Next.js application.
 				</p>
 			</div>
 
@@ -32,7 +32,7 @@ export default function InstallationPage() {
 				<h2 id="installation-options" className="scroll-m-20 text-2xl font-semibold tracking-tight pt-6">
 					Installation Options
 				</h2>
-				<p>You can install Expenzo using one of the following methods:</p>
+				<p>You can install JUYO Finance using one of the following methods:</p>
 
 				<Tabs defaultValue="create-next-app">
 					<TabsList className="grid w-full grid-cols-3">
@@ -45,10 +45,10 @@ export default function InstallationPage() {
 						<h3 id="create-next-app" className="scroll-m-20 text-xl font-semibold tracking-tight">
 							Using Create Next App
 						</h3>
-						<p>The easiest way to get started with Expenzo is to use Create Next App with our template.</p>
+						<p>The easiest way to get started with JUYO Finance is to use Create Next App with our template.</p>
 						<div className="relative my-4 rounded-md bg-muted p-4">
 							<pre className="text-sm font-mono">
-								<code>npx create-next-app@latest my-wallet-app --example https://github.com/Expenzo/template</code>
+								<code>npx create-next-app@latest my-wallet-app --example https://github.com/JUYO-Finance/template</code>
 							</pre>
 							<Button
 								variant="ghost"
@@ -56,7 +56,7 @@ export default function InstallationPage() {
 								className="absolute right-2 top-2"
 								onClick={() => {
 									navigator.clipboard.writeText(
-										"npx create-next-app@latest my-wallet-app --example https://github.com/Expenzo/template",
+										"npx create-next-app@latest my-wallet-app --example https://github.com/JUYO-Finance/template",
 									)
 								}}
 							>
@@ -78,14 +78,14 @@ export default function InstallationPage() {
 								<span className="sr-only">Copy code</span>
 							</Button>
 						</div>
-						<p>This will create a new Next.js project with Expenzo pre-configured and ready to use.</p>
+						<p>This will create a new Next.js project with JUYO Finance pre-configured and ready to use.</p>
 					</TabsContent>
 
 					<TabsContent value="manual" className="space-y-4 mt-4">
 						<h3 id="manual-setup" className="scroll-m-20 text-xl font-semibold tracking-tight">
 							Manual Setup
 						</h3>
-						<p>If you already have an existing Next.js project, you can install Expenzo manually.</p>
+						<p>If you already have an existing Next.js project, you can install JUYO Finance manually.</p>
 						<h4 id="step-1" className="scroll-m-20 text-lg font-semibold tracking-tight mt-4">
 							Step 1: Create or use an existing Next.js project
 						</h4>
@@ -121,18 +121,18 @@ export default function InstallationPage() {
 						</div>
 
 						<h4 id="step-2" className="scroll-m-20 text-lg font-semibold tracking-tight mt-4">
-							Step 2: Install Expenzo and its dependencies
+							Step 2: Install JUYO Finance and its dependencies
 						</h4>
 						<div className="relative my-4 rounded-md bg-muted p-4">
 							<pre className="text-sm font-mono">
-								<code>npm install @Expenzo/core @Expenzo/ui</code>
+								<code>npm install @JUYO-Finance/core @JUYO-Finance/ui</code>
 							</pre>
 							<Button
 								variant="ghost"
 								size="icon"
 								className="absolute right-2 top-2"
 								onClick={() => {
-									navigator.clipboard.writeText("npm install @Expenzo/core @Expenzo/ui")
+									navigator.clipboard.writeText("npm install @JUYO-Finance/core @JUYO-Finance/ui")
 								}}
 							>
 								<svg
@@ -158,11 +158,11 @@ export default function InstallationPage() {
 							Step 3: Set up the configuration
 						</h4>
 						<p>
-							Create a <code>Expenzo.config.js</code> file in the root of your project:
+							Create a <code>JUYO Finance.config.js</code> file in the root of your project:
 						</p>
 						<div className="relative my-4 rounded-md bg-muted p-4">
 							<pre className="text-sm font-mono">
-								<code>{`// Expenzo.config.js
+								<code>{`// JUYO Finance.config.js
 module.exports = {
   theme: {
     primaryColor: '#0070f3',
@@ -185,7 +185,7 @@ module.exports = {
 								size="icon"
 								className="absolute right-2 top-2"
 								onClick={() => {
-									navigator.clipboard.writeText(`// Expenzo.config.js
+									navigator.clipboard.writeText(`// JUYO Finance.config.js
 module.exports = {
   theme: {
     primaryColor: '#0070f3',
@@ -224,13 +224,13 @@ module.exports = {
 						</div>
 
 						<h4 id="step-4" className="scroll-m-20 text-lg font-semibold tracking-tight mt-4">
-							Step 4: Import and use Expenzo components
+							Step 4: Import and use JUYO Finance components
 						</h4>
-						<p>Now you can import and use Expenzo components in your Next.js application:</p>
+						<p>Now you can import and use JUYO Finance components in your Next.js application:</p>
 						<div className="relative my-4 rounded-md bg-muted p-4">
 							<pre className="text-sm font-mono">
 								<code>{`// app/page.js
-import { Dashboard } from '@Expenzo/ui'
+import { Dashboard } from '@JUYO-Finance/ui'
 
 export default function Home() {
   return (
@@ -246,7 +246,7 @@ export default function Home() {
 								className="absolute right-2 top-2"
 								onClick={() => {
 									navigator.clipboard.writeText(`// app/page.js
-import { Dashboard } from '@Expenzo/ui'
+import { Dashboard } from '@JUYO-Finance/ui'
 
 export default function Home() {
   return (
@@ -281,7 +281,7 @@ export default function Home() {
 						<h3 id="docker-setup" className="scroll-m-20 text-xl font-semibold tracking-tight">
 							Using Docker
 						</h3>
-						<p>You can also run Expenzo using Docker for a containerized setup.</p>
+						<p>You can also run JUYO Finance using Docker for a containerized setup.</p>
 						<h4 id="docker-step-1" className="scroll-m-20 text-lg font-semibold tracking-tight mt-4">
 							Step 1: Create a Dockerfile
 						</h4>
@@ -398,7 +398,7 @@ CMD ["node", "server.js"]`)
 								<code>{`version: '3'
 
 services:
-  Expenzo:
+  JUYO-Finance:
     build:
       context: .
       dockerfile: Dockerfile
@@ -416,7 +416,7 @@ services:
 									navigator.clipboard.writeText(`version: '3'
 
 services:
-  Expenzo:
+  JUYO-Finance:
     build:
       context: .
       dockerfile: Dockerfile
@@ -481,7 +481,7 @@ services:
 							</Button>
 						</div>
 						<p>
-							Your Expenzo application will now be running at <code>http://localhost:3000</code>.
+							Your JUYO Finance application will now be running at <code>http://localhost:3000</code>.
 						</p>
 					</TabsContent>
 				</Tabs>
@@ -489,7 +489,7 @@ services:
 				<h2 id="next-steps" className="scroll-m-20 text-2xl font-semibold tracking-tight pt-6">
 					Next Steps
 				</h2>
-				<p>Now that you have installed Expenzo, you can:</p>
+				<p>Now that you have installed JUYO Finance, you can:</p>
 				<ul className="list-disc pl-6 space-y-2">
 					<li>
 						<a href="/docs/configuration/theme-config" className="text-primary hover:underline">
@@ -523,7 +523,7 @@ services:
 				</ul>
 				<p className="mt-4">
 					If you still have issues, please{" "}
-					<a href="https://github.com/Expenzo/Expenzo/issues" className="text-primary hover:underline">
+					<a href="https://github.com/JUYO-Finance/JUYO-Finance/issues" className="text-primary hover:underline">
 						open an issue
 					</a>{" "}
 					on our GitHub repository.

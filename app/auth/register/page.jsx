@@ -86,7 +86,7 @@ export default function RegisterPage() {
 						<Logo size="large" showText={false} />
 					</div>
 					<h2 className="mt-4 text-3xl font-semibold">Create an account</h2>
-					<p className="mt-2 text-muted-foreground">Sign up for Expenzo to manage your finances</p>
+					<p className="mt-2 text-muted-foreground">Sign up for JUYO Finance to manage your finances</p>
 				</div>
 
 				<Card>

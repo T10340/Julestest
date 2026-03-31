@@ -2,8 +2,8 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 import { Poppins } from 'next/font/google'
 export const metadata = {
-	title: "Expenzo - Personal Finance Dashboard",
-	description: "Manage your finances with ease using Expenzo.",
+	title: "JUYO Finance - Personal Finance Dashboard",
+	description: "Manage your finances with ease using JUYO Finance.",
 }
 const poppins = Poppins({
 	weight: ['300', '400', '500', '600', '700'],
