@@ -9,13 +9,13 @@ export default function CreateWalletGuidePage() {
 		<div className="space-y-6">
 			<div className="space-y-3">
 				<h1 className="text-3xl font-semibold tracking-tight">Creating a Wallet</h1>
-				<p className="text-muted-foreground">Learn how to create and set up a new wallet in Expenzo.</p>
+				<p className="text-muted-foreground">Learn how to create and set up a new wallet in JUYO Finance.</p>
 			</div>
 
 			<div className="space-y-4">
 				<h2 className="text-2xl font-semibold tracking-tight">Overview</h2>
 				<p>
-					Wallets are the foundation of your financial management in Expenzo. Each wallet represents a financial
+					Wallets are the foundation of your financial management in JUYO Finance. Each wallet represents a financial
 					account, such as a checking account, savings account, credit card, or investment account. This guide will walk
 					you through the process of creating a new wallet.
 				</p>

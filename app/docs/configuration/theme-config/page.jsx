@@ -11,7 +11,7 @@ export default function ThemeConfigPage() {
 					Theme Configuration
 				</h1>
 				<p className="text-xl text-muted-foreground">
-					Customize the appearance and behavior of your Expenzo application.
+					Customize the appearance and behavior of your JUYO Finance application.
 				</p>
 			</div>
 
@@ -20,7 +20,7 @@ export default function ThemeConfigPage() {
 					Overview
 				</h2>
 				<p>
-					Expenzo provides a flexible theme configuration system that allows you to customize the layout, direction,
+					JUYO Finance provides a flexible theme configuration system that allows you to customize the layout, direction,
 					and theme of your application. The configuration is defined in the <code>components/theme/config.jsx</code>{" "}
 					file.
 				</p>
@@ -122,7 +122,7 @@ export default defaultConfig`)
 				<h3 id="layout-options" className="scroll-m-20 text-xl font-semibold tracking-tight pt-4">
 					Layout Options
 				</h3>
-				<p>Expenzo supports two layout options:</p>
+				<p>JUYO Finance supports two layout options:</p>
 				<ul className="list-disc pl-6 space-y-2 my-4">
 					<li>
 						<strong>vertical</strong> - The navigation menu is displayed on the left side of the screen. This is the
@@ -152,7 +152,7 @@ export default defaultConfig`)
 				<h3 id="direction-options" className="scroll-m-20 text-xl font-semibold tracking-tight pt-6">
 					Direction Options
 				</h3>
-				<p>Expenzo supports two text direction options:</p>
+				<p>JUYO Finance supports two text direction options:</p>
 				<ul className="list-disc pl-6 space-y-2 my-4">
 					<li>
 						<strong>ltr</strong> - Left-to-right text direction. This is the default direction and is used for languages
@@ -183,7 +183,7 @@ export default defaultConfig`)
 					Theme Options
 				</h3>
 				<p>
-					Expenzo uses <code>next-themes</code> for theme management. The theme options are defined in the{" "}
+					JUYO Finance uses <code>next-themes</code> for theme management. The theme options are defined in the{" "}
 					<code>themeOptions</code> object:
 				</p>
 				<ul className="list-disc pl-6 space-y-2 my-4">

@@ -10,7 +10,7 @@ export default function ChangeLogoPage() {
 				<h1 id="changing-logo" className="scroll-m-20 text-3xl font-semibold tracking-tight">
 					Changing the Logo
 				</h1>
-				<p className="text-xl text-muted-foreground">Learn how to customize the Expenzo logo to match your brand.</p>
+				<p className="text-xl text-muted-foreground">Learn how to customize the JUYO Finance logo to match your brand.</p>
 			</div>
 
 			<div className="space-y-4">
@@ -18,7 +18,7 @@ export default function ChangeLogoPage() {
 					Overview
 				</h2>
 				<p>
-					The Expenzo logo is defined in the <code>components/logo.jsx</code> file. You can customize the logo by
+					The JUYO Finance logo is defined in the <code>components/logo.jsx</code> file. You can customize the logo by
 					modifying this file to use your own icon, text, or both.
 				</p>
 
@@ -60,7 +60,7 @@ export function Logo({ className, showText = true, size = "default" }) {
       <div className={cn("relative flex items-center justify-center bg-primary rounded-md", sizeConfig.container)}>
         <Wallet className={cn("text-primary-foreground", sizeConfig.icon)} />
       </div>
-      {showText && <span className={cn("font-semibold tracking-tight", sizeConfig.text)}>Expenzo</span>}
+      {showText && <span className={cn("font-semibold tracking-tight", sizeConfig.text)}>JUYO Finance</span>}
     </Link>
   )
 }`}</code>
@@ -101,7 +101,7 @@ export function Logo({ className, showText = true, size = "default" }) {
       <div className={cn("relative flex items-center justify-center bg-primary rounded-md", sizeConfig.container)}>
         <Wallet className={cn("text-primary-foreground", sizeConfig.icon)} />
       </div>
-      {showText && <span className={cn("font-semibold tracking-tight", sizeConfig.text)}>Expenzo</span>}
+      {showText && <span className={cn("font-semibold tracking-tight", sizeConfig.text)}>JUYO Finance</span>}
     </Link>
   )
 }`)
@@ -220,7 +220,7 @@ import { CreditCard } from 'lucide-react'
 
 						<div className="relative my-4 rounded-md bg-muted p-4">
 							<pre className="text-sm font-mono">
-								<code>{`// Change the text from "Expenzo" to your brand name
+								<code>{`// Change the text from "JUYO Finance" to your brand name
 {showText && <span className={cn("font-semibold tracking-tight", sizeConfig.text)}>YourBrandName</span>}`}</code>
 							</pre>
 						</div>

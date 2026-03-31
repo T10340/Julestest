@@ -11,7 +11,7 @@ export default function ChangeColorsPage() {
 					Changing Colors
 				</h1>
 				<p className="text-xl text-muted-foreground">
-					Learn how to customize the color scheme of your Expenzo application.
+					Learn how to customize the color scheme of your JUYO Finance application.
 				</p>
 			</div>
 
@@ -20,7 +20,7 @@ export default function ChangeColorsPage() {
 					Overview
 				</h2>
 				<p>
-					Expenzo uses Tailwind CSS for styling, with a custom color palette defined in the{" "}
+					JUYO Finance uses Tailwind CSS for styling, with a custom color palette defined in the{" "}
 					<code>tailwind.config.js</code> file. You can customize the colors by modifying this file.
 				</p>
 

@@ -9,7 +9,7 @@ export default function ConfigurationPage() {
 			<div className="space-y-4">
 				<h1 className="text-4xl font-semibold tracking-tight">Configuration</h1>
 				<p className="text-lg text-muted-foreground">
-					Learn how to configure and customize Expenzo to suit your needs.
+					Learn how to configure and customize JUYO Finance to suit your needs.
 				</p>
 			</div>
 
@@ -24,7 +24,7 @@ export default function ConfigurationPage() {
 					</CardHeader>
 					<CardContent>
 						<p className="text-sm text-muted-foreground mb-4">
-							Learn how to configure the layout, direction, and theme of your Expenzo application.
+							Learn how to configure the layout, direction, and theme of your JUYO Finance application.
 						</p>
 						<Button variant="outline" asChild>
 							<Link href="/docs/configuration/theme-config">View Details</Link>

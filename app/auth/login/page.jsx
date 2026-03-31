@@ -45,7 +45,7 @@ export default function LoginPage() {
 						<Logo size="large" showText={false} />
 					</div>
 					<h2 className="mt-4 text-3xl font-semibold">Welcome back</h2>
-					<p className="mt-2 text-muted-foreground">Sign in to your Expenzo account</p>
+					<p className="mt-2 text-muted-foreground">Sign in to your JUYO Finance account</p>
 				</div>
 
 				<Card>

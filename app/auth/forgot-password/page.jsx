@@ -61,7 +61,7 @@ export default function ForgotPasswordPage() {
 						<Logo size="large" showText={false} />
 					</div>
 					<h2 className="mt-4 text-3xl font-semibold">Forgot Password</h2>
-					<p className="mt-2 text-muted-foreground">Reset your Expenzo account password</p>
+					<p className="mt-2 text-muted-foreground">Reset your JUYO Finance account password</p>
 				</div>
 
 				<Card>

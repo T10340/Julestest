@@ -11,7 +11,7 @@ export default function ChangeFontsPage() {
 					Changing Fonts
 				</h1>
 				<p className="text-xl text-muted-foreground">
-					Learn how to customize the typography of your Expenzo application.
+					Learn how to customize the typography of your JUYO Finance application.
 				</p>
 			</div>
 
@@ -20,7 +20,7 @@ export default function ChangeFontsPage() {
 					Overview
 				</h2>
 				<p>
-					Expenzo uses Tailwind CSS for styling, including typography. You can customize the fonts by modifying the{" "}
+					JUYO Finance uses Tailwind CSS for styling, including typography. You can customize the fonts by modifying the{" "}
 					<code>tailwind.config.js</code> file and adding font imports to your <code>globals.css</code> file.
 				</p>
 
@@ -28,7 +28,7 @@ export default function ChangeFontsPage() {
 					Current Font Configuration
 				</h2>
 				<p>
-					By default, Expenzo uses the system font stack, which provides a native look and feel on different
+					By default, JUYO Finance uses the system font stack, which provides a native look and feel on different
 					operating systems. Here's how to check and modify the current font configuration:
 				</p>
 
@@ -49,7 +49,7 @@ export default function ChangeFontsPage() {
 						</h3>
 						<p>
 							Google Fonts is a popular and easy way to add custom fonts to your application. Here's how to add and use
-							Google Fonts in Expenzo:
+							Google Fonts in JUYO Finance:
 						</p>
 
 						<h4 className="text-lg font-medium mt-4">Step 1: Import the Font in globals.css</h4>
@@ -126,7 +126,7 @@ export default function RootLayout({ children }) {
 						</h3>
 						<p>
 							For better performance and to avoid relying on external services, you can use local fonts. Here's how to
-							add and use local fonts in Expenzo:
+							add and use local fonts in JUYO Finance:
 						</p>
 
 						<h4 className="text-lg font-medium mt-4">Step 1: Add Font Files to Your Project</h4>
@@ -225,7 +225,7 @@ module.exports = {
 						</h3>
 						<p>
 							Variable fonts provide multiple variations of a typeface in a single font file, which can improve
-							performance and flexibility. Here's how to use variable fonts in Expenzo:
+							performance and flexibility. Here's how to use variable fonts in JUYO Finance:
 						</p>
 
 						<h4 className="text-lg font-medium mt-4">Step 1: Add the Variable Font to Your Project</h4>
@@ -299,7 +299,7 @@ module.exports = {
 				<h2 id="complete-example" className="scroll-m-20 text-2xl font-semibold tracking-tight pt-6">
 					Complete Example
 				</h2>
-				<p>Here's a complete example of customizing the fonts in Expenzo:</p>
+				<p>Here's a complete example of customizing the fonts in JUYO Finance:</p>
 
 				<div className="relative my-6 rounded-md bg-muted p-4 overflow-x-auto">
 					<pre className="text-sm font-mono">

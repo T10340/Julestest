@@ -5,18 +5,18 @@ export default function IntroductionPage() {
 	return (
 		<div className="space-y-6">
 			<div className="space-y-3">
-				<h1 className="text-3xl font-semibold tracking-tight">Introduction to Expenzo</h1>
+				<h1 className="text-3xl font-semibold tracking-tight">Introduction to JUYO Finance</h1>
 				<p className="text-muted-foreground">
-					Learn about Expenzo, its features, and how it can help you manage your personal finances.
+					Learn about JUYO Finance, its features, and how it can help you manage your personal finances.
 				</p>
 			</div>
 
 			<div className="space-y-4">
-				<h2 className="text-2xl font-semibold tracking-tight">What is Expenzo?</h2>
+				<h2 className="text-2xl font-semibold tracking-tight">What is JUYO Finance?</h2>
 				<p>
-					Expenzo is a comprehensive personal finance dashboard that helps you manage your money, track expenses,
+					JUYO Finance is a comprehensive personal finance dashboard that helps you manage your money, track expenses,
 					create budgets, and achieve your financial goals. With an intuitive interface and powerful features,
-					Expenzo makes it easy to take control of your finances.
+					JUYO Finance makes it easy to take control of your finances.
 				</p>
 
 				<h2 className="text-2xl font-semibold tracking-tight pt-4">Key Features</h2>
@@ -41,11 +41,11 @@ export default function IntroductionPage() {
 					</li>
 				</ul>
 
-				<h2 className="text-2xl font-semibold tracking-tight pt-4">Why Choose Expenzo?</h2>
+				<h2 className="text-2xl font-semibold tracking-tight pt-4">Why Choose JUYO Finance?</h2>
 				<p>
-					Expenzo stands out from other personal finance tools with its user-friendly interface, comprehensive
+					JUYO Finance stands out from other personal finance tools with its user-friendly interface, comprehensive
 					feature set, and focus on security. Whether you're looking to get out of debt, save for a major purchase, or
-					simply gain better control over your finances, Expenzo provides the tools you need to succeed.
+					simply gain better control over your finances, JUYO Finance provides the tools you need to succeed.
 				</p>
 
 				<div className="flex gap-4 pt-4">
