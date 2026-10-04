@@ -2,8 +2,8 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 import { Poppins } from 'next/font/google'
 export const metadata = {
-	title: "JUYO Finance - Personal Finance Dashboard",
-	description: "Manage your finances with ease using JUYO Finance.",
+	title: "WebCrafters - Agence de Création de Site Web",
+	description: "Design moderne, propre et respectueux des bonnes pratiques d'UI/UX pour votre entreprise.",
 }
 const poppins = Poppins({
 	weight: ['300', '400', '500', '600', '700'],
